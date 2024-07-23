@@ -1,0 +1,73 @@
+
+-- Install EndeavorOS using offline mode
+
+-- Usefule pacman (and yay commands)
+
+-- Update system
+sudo pacman -Syy
+yay -Syy
+
+-- Checking number of cached packages
+sudo ls /var/cache/pacman/pkg/ | wc -l
+
+--Checking the disk size of the cached packages
+du -sh /var/cache/pacman/pkg/
+
+-- Remove all uninstalled packages from cache
+sudo pacman -Sc
+yay -Sc
+
+
+
+
+-- Install Nvidia Drivers
+nvidia-inst
+https://forum.endeavouros.com/t/how-to-correctly-install-my-nvidia-drivers-with-nvidia-inst/36721
+
+
+-- Python pyenv
+sudo pacman -S pyenv
+https://archlinux.org/packages/extra/any/pyenv/
+
+
+-- Visual Studio code
+sudo pacman -S code
+https://archlinux.org/packages/extra/x86_64/code/
+
+-- Postman
+Download from site AppImage
+https://www.postman.com/downloads/
+
+-- Nodejs
+https://nodejs.org/en/download/package-manager
+
+
+-- .Net SDK
+Install script works great with minimal .bashrc
+https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script?WT.mc_id=dotnet-35129-website
+
+-- Github desktop
+yay -S github-desktop-bin
+https://aur.archlinux.org/packages/github-desktop-bin
+
+-- DbGate
+Appimage
+https://dbgate.org/
+
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
