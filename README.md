@@ -7,6 +7,24 @@ Installing EndeavourOS via offline mode helps minimize system compatibility. You
 
 # System Upkeep! 
 
+## KDE Plasma
+I had some glitchyness when using wayland with KDE Plasma 6. If you experiance the same 
+I recommend switching to plasma that uses X11 for your desktop
+
+Go to the file
+
+> /etc/sddm.conf
+
+and edit the line 
+
+```
+[Autologin]
+Session=plasma --> Session=plasmax11
+```
+
+X11 desktop is older not the newest or fastest but plays nicer with most apps of July 2024. \
+I like Manjaro's philosophy here!
+
 ## Useful pacman (and yay commands)
 
 ### Update system
@@ -42,6 +60,18 @@ Senthilkumar Palani (aka SK) \
 
 > yay -R <package_name>
 
+
+### Enable Developer Tools
+Enable the build tools for Arch Linux Packages.
+
+> sudo pacman -S base-devel
+
+
+### Install Octipi
+Super helpful GUI that helps manages packages on any ARCH Distro
+
+> 
+
 <br>
 
 ## Nvidia Drivers
@@ -50,6 +80,15 @@ Make sure to choose the proper installation from the installation menu \
 > nvidia-inst
 
 <br>
+
+
+## Office Software
+I will be using a stable version of libreOffice.
+
+> sudo pacman -S 
+
+
+
 
 ## Development Tools (The ones I use(d) anyway)
 
@@ -103,9 +142,18 @@ are some instructions specific to MySQL (Or MariaDB). \
 **SideNote** - Postgres is awesome 😎 too. But I started my database journey with MySQL and lanched my apps on 
 a production MySQL server so I'm stuck with it. But it's palletable and gets the job done.
 
-> sudo pacman -S mariadb
+> sudo pacman -S mariadb 
 
+Then run:
 
+> mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+Then you can create users and connect to it with a database client or via the cli.
+
+Thanks so much Geeks for Geeks! 🤓 \
+[How to Install and configure MySQL on Arch-based Linux Distributions(Manjaro)](https://www.geeksforgeeks.org/how-to-install-and-configure-mysql-on-arch-based-linux-distributionsmanjaro/)
+
+### 
 
 
 

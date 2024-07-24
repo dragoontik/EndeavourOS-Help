@@ -51,8 +51,9 @@ yay -S github-desktop-bin
 https://aur.archlinux.org/packages/github-desktop-bin
 
 -- DbGate
-Appimage
-https://dbgate.org/
+Appimage by the developer works great and is stable but you can also get it from the AUR. \
+[DGate Website](https://dbgate.org/) \
+
 
 -- 
 
