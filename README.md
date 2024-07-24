@@ -25,18 +25,21 @@ Session=plasma --> Session=plasmax11
 X11 desktop is older not the newest or fastest but plays nicer with most apps of July 2024. \
 I like Manjaro's philosophy here!
 
+Check out this thread from the official Community for more details: \
+[Plasma 6 Update some hints](https://forum.endeavouros.com/t/plasma-6-update-some-hints/52161)
+
 ## Useful pacman (and yay commands)
 
 ### Update system
 > sudo pacman -Syu
 > yay -Syu
 
-### Checking number of cached packages
+### Checking number of cached packages (Not really a pacman command)
 > sudo ls /var/cache/pacman/pkg/ | wc -l
 
 ### Dealing with Package Cache!
 
-### Checking the disk size of the cached packages
+### Checking the disk size of the cached packages (Not really a pacman command)
 > du -sh /var/cache/pacman/pkg/
 
 ### Remove all uninstalled packages from cache
