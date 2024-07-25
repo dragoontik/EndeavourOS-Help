@@ -103,8 +103,16 @@ If you hate yourself like I did then install the Visual studio code OSS build
 
 If you use vscode - OSS Most of the good extentions will have to be manually installed via the [Microsoft Extention Marketplace](https://marketplace.visualstudio.com/vscode)
 
-Getting just the nifty python extentions required some work to get it to work correctly: <br>
- [Extension 'ms-python.python' CANNOT use API proposal: telemetryLogger.](https://github.com/microsoft/vscode-python/issues/20247)
+Update! Turns out the community package that helps get all the extentions into vscode -OSS is super helpful
+
+> yay -S code-marketplace
+
+That should help.
+
+Getting the nifty python extentions required some work to get it to work correctly: <br>
+Use this thread to help basically you just need to add something ```"enable-proposed-api": ["ms-python.debugpy"]``` to the debugger to
+get one of the python extentions to work properly
+[Extension 'ms-python.python' CANNOT use API proposal: telemetryLogger.](https://github.com/microsoft/vscode-python/issues/20247)
 
 ## Development Tools (The ones I use(d) anyway)
 
@@ -169,7 +177,6 @@ Then you can create users and connect to it with a database client or via the cl
 Thanks so much Geeks for Geeks! 🤓 \
 [How to Install and configure MySQL on Arch-based Linux Distributions(Manjaro)](https://www.geeksforgeeks.org/how-to-install-and-configure-mysql-on-arch-based-linux-distributionsmanjaro/)
 
-### 
 
 
 
