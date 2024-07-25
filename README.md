@@ -88,10 +88,23 @@ Make sure to choose the proper installation from the installation menu \
 ## Office Software
 I will be using a stable version of libreOffice.
 
-> sudo pacman -S 
+> sudo pacman -S libreoffice-still
+
+## Visual Studio Code
+I struggled with this one. Just do yourself a favor and get Microsofts 
+official one so it just works. It just plain works! 😫
+
+> yay -S visual-studio-code-bin
 
 
+If you hate yourself like I did then install the Visual studio code OSS build
 
+> sudo pacman -S code
+
+If you use vscode - OSS Most of the good extentions will have to be manually installed via the [Microsoft Extention Marketplace](https://marketplace.visualstudio.com/vscode)
+
+Getting just the nifty python extentions required some work to get it to work correctly: <br>
+ [Extension 'ms-python.python' CANNOT use API proposal: telemetryLogger.](https://github.com/microsoft/vscode-python/issues/20247)
 
 ## Development Tools (The ones I use(d) anyway)
 
