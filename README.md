@@ -5,6 +5,14 @@
 # Install EndeavorOS using offline mode
 Installing EndeavourOS via offline mode helps minimize system compatibility. You can always change the desktop env later if you don't like KDE. (Who doesn't like KDE? 🤷)
 
+
+# Emergancy Rescue and Boot restore
+
+
+
+
+
+
 # System Upkeep! 
 
 ## KDE Plasma
