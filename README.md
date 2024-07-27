@@ -6,8 +6,36 @@
 Installing EndeavourOS via offline mode helps minimize system compatibility. You can always change the desktop env later if you don't like KDE. (Who doesn't like KDE? 🤷)
 
 
-# Emergancy Rescue and Boot restore
+# Emergency Rescue and Boot restore
+Steps to enter arch-chroot to help enter your system and run commands to fix it. 
+I had to install linux headers after switching kernals. 
 
+1. Get bootable disk or thumbdrive
+2. Boot it up like you did when you install EndeavorOS
+3. Mount to the drive
+```
+$ sudo mount /[diskname] /mnt
+```
+4. Check that your are successfully mounted
+```
+$ sudo arch-chroot /mnt
+```
+5. Run the commands you need to restore your system
+
+The official Guide: <br>
+[chroot](https://wiki.archlinux.org/title/Chroot)
+
+
+# Switching Kernals
+Follow this official guide. Remember to update so you don't have to arch-chroot like I did.
+<br>
+[AKM](https://discovery.endeavouros.com/endeavouros-tools/akm/2021/08/)
+<br>
+
+***Important*** Be sure to run an update to your boot loader GRUB in my case
+> grub-mkconfig -o /boot/grub/grub.cfg
+
+There is also an official 
 
 
 
