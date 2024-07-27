@@ -33,7 +33,7 @@ Follow this official guide. Remember to update so you don't have to arch-chroot 
 <br>
 
 ***Important*** Be sure to run an update to your boot loader GRUB in my case
-> grub-mkconfig -o /boot/grub/grub.cfg
+> sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 There is also an official 
 
